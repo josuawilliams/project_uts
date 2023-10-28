@@ -209,6 +209,52 @@ export default function Home() {
           <p className='text-black flex justify-center mt-3 text-lg'>
             Fitur praktis dan handal, mudah, cepat dan hilang
           </p>
+          <div className='flex justify-center w-50 mt-10'>
+            <Card
+              sx={{
+                minWidth: 275,
+                padding: 3,
+                borderRadius: '30px'
+              }}>
+              <CardContent className='flex justify-center'>
+                <div className='flex flex-col'>
+                  <div className='mt-2 font-bold flex justify-center text-[23px]'>
+                    Transfer Ke Berbagai Bank
+                  </div>
+                  <div className='flex flex-row justify-center mt-5'>
+                    <Image
+                      alt='iso'
+                      className='mx-3'
+                      src={'/mandiri.svg'}
+                      width={100}
+                      height={10}
+                    />
+                    <Image
+                      alt='iso'
+                      className='mx-3'
+                      src={'/mandiri.svg'}
+                      width={100}
+                      height={10}
+                    />
+                    <Image
+                      alt='iso'
+                      className='mx-3'
+                      src={'/mandiri.svg'}
+                      width={100}
+                      height={10}
+                    />
+                    <Image
+                      alt='iso'
+                      className='mx-3'
+                      src={'/mandiri.svg'}
+                      width={100}
+                      height={10}
+                    />
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </main>
