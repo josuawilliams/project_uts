@@ -9,6 +9,7 @@ import Image from 'next/image'
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
+import CircumIcon from '@klarr-agency/circum-icons-react'
 import CardContent from '@mui/material/CardContent'
 import Typography from '@mui/material/Typography'
 
@@ -209,7 +210,7 @@ export default function Home() {
           <p className='text-black flex justify-center mt-3 text-lg'>
             Fitur praktis dan handal, mudah, cepat dan hilang
           </p>
-          <div className='flex justify-center w-50 mt-10'>
+          <div className='flex justify-center w-50 mb-10 mt-10'>
             <Card
               sx={{
                 minWidth: 275,
@@ -232,21 +233,21 @@ export default function Home() {
                     <Image
                       alt='iso'
                       className='mx-3'
-                      src={'/mandiri.svg'}
+                      src={'/bni.svg'}
                       width={100}
                       height={10}
                     />
                     <Image
                       alt='iso'
                       className='mx-3'
-                      src={'/mandiri.svg'}
+                      src={'/bri.svg'}
                       width={100}
                       height={10}
                     />
                     <Image
                       alt='iso'
                       className='mx-3'
-                      src={'/mandiri.svg'}
+                      src={'/cimb.svg'}
                       width={100}
                       height={10}
                     />
@@ -256,6 +257,78 @@ export default function Home() {
             </Card>
           </div>
         </div>
+        <footer>
+          <div className='p-10 bg-gray-800 text-gray-200 flex'>
+            <div className='max-w-7xl mx-auto'>
+              <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2'>
+                <div className='mb-5'>
+                  <div className='flex flex-row'>
+                    <div>
+                      <Image
+                        src={'/money-svgrepo-com.svg'}
+                        alt='logo'
+                        width={45}
+                        height={40}
+                      />
+                    </div>
+                    <div>
+                      <h2 className='text-[30px] mx-3'>Money</h2>
+                    </div>
+                  </div>
+                  <div className='mt-10 flex'>
+                    <div className='mr-28'>Fitur</div>
+                    <div className='mr-28'>Money Bisnis</div>
+                    <div className='mr-28'>Tentang Kami</div>
+                    <div className='mr-28'>Karir</div>
+                    <div className='mr-28'>Bantuan</div>
+                  </div>
+                  <div className='mt-12 flex'>
+                    <div className='mr-14'>
+                      <CircumIcon name='facebook' />
+                    </div>
+                    <div className='mr-14'>
+                      <CircumIcon name='instagram' />
+                    </div>
+                    <div className='mr-14'>
+                      <CircumIcon name='linkedin' />
+                    </div>
+                    <div className='mr-14'>
+                      <CircumIcon name='phone' />
+                    </div>
+                  </div>
+                  <div className='mt-8 flex'>
+                    <div className='flex'>
+                      <Image
+                        alt='playstore'
+                        width={170}
+                        height={150}
+                        src={'/playstore.svg'}
+                      />
+                      <Image
+                        alt='apple'
+                        width={170}
+                        height={150}
+                        src={'/appstore.svg'}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div className='mt-2'>
+                © 2017 - 2023 PT Money Jaya Indah All Rights Reserved.
+              </div>
+            </div>
+            <div className='p-7 w-full h-full'>
+              <div className='font-bold text-[20px]'>PT Money Jaya Indah</div>
+              <div className='mt-4 text-[19px]'>
+                Tower Indah Lt.18 Unit 2 Jl. Prof. DR. Medan No.7, RT.7/RW.2,
+                Merahan, Merahan Tim., Kecamatan Setiabudi, Kota Jakarta
+                Selatan, Daerah Khusus Ibukota Jakarta 12950
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </main>
   )
